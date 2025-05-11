@@ -117,7 +117,7 @@ const Contact = () => {
   </div>
   <div className="mt-4 text-center">
   <a
-    href="/public/Pratham.G (Resume).pdf"
+    href="/public/Pratham.G(Resume).pdf"
     target="_blank"
     rel="noopener noreferrer"
     className="inline-block bg-purple-300 text-black text-2xl w-full py-2 rounded-2xl mt-6 hover:bg-gray-500 transition-all"
