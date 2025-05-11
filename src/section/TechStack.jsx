@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import TitleHeader from "../components/TitleHeader";
 import { techStackIcons } from "../constants";
-import TechIcon from "../components/Model/TechLogos/Techicon";
+import TechIcon from "../components/Model/TechLogos/TechIcon";
 
 import { gsap } from "gsap";
 
