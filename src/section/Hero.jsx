@@ -63,7 +63,7 @@ const Hero = () => {
         </header>
         {/* right : 3D Model */}
         <figure>
-          <div className="hero-3d-layout cursor-pointer  mb-30  md:mb-0 p-5 sm:p-10">
+          <div className="hero-3d-layout cursor-pointer md:mt-10 mt-40 mb-30 p-5 sm:p-10">
             <HeroExperience />
           </div>
         </figure>
