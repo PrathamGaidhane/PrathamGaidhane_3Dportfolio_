@@ -2,12 +2,10 @@ import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useMediaQuery } from "react-responsive";
 
+import { Room } from "./Room";
 import HeroLights from "./HeroLight";
 import Particles from "./Particles";
 import { Suspense } from "react";
-
-import { lazy, Suspense } from "react";
-const Room = lazy(() => import("./Room"));
 
 const HeroExperience = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
@@ -15,7 +13,6 @@ const HeroExperience = () => {
 
   return (
     <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
-      dpr={[1, 1.5]} // limit pixel density on low-end mobile
       {/* deep blue ambient */}
       <ambientLight intensity={0.2} color="#1a1a40" />
       {/* Configure OrbitControls to disable panning and control zoom based on device type */}
@@ -28,9 +25,7 @@ const HeroExperience = () => {
         maxPolarAngle={Math.PI / 2} // Maximum angle for vertical rotation
       />
 
-      <Suspense
-        fallback={<span className="text-white">Loading 3D Model...</span>}
-      >
+      <Suspense fallback={null}>
         <HeroLights />
         <Particles count={100} />
         <group

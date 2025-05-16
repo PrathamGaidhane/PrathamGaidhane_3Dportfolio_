@@ -9,7 +9,7 @@ const Testimonials = () => {
     <section id="testimonials" className="flex-centre section-padding">
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
-          title="what People Say About Me?"
+          title="What People Say About Me?"
           sub="⭐ Client Feedback Highligts"
         />
 
